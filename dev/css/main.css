@@ -1823,10 +1823,6 @@
   font-size: 14px;
 }
 
-body {
-  margin: 0;
-}
-
 @media screen and (max-width: 1700px) {
   .main__info {
     max-width: 322px;
