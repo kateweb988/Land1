@@ -1,0 +1,91 @@
+.template-content
+   font-family: 'Playfair 9pt', sans-serif
+   background: var(--color-bg)
+   font-weight: 500
+   font-size: clamp(12.8px, calc(11.429px + 0.238vw), 16px)
+   line-height: 100%
+   color: var(--color-text-black)
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+   --spacing-3xs: clamp(0.25rem, 0.4vw, 0.5rem)
+   --spacing-2xs: clamp(0.5rem, 0.7vw, 1rem)
+   --spacing-xs: clamp(1rem, 1.7vw, 2rem)
+   --spacing-sm: clamp(1.5rem, 2.6vw, 3.125rem)
+   --spacing-md: clamp(2rem, 3.5vw, 4.25rem)
+   --spacing-lg: clamp(3rem, 5.2vw, 6.25rem)
+   --spacing-xl: clamp(4rem, 7.3vw, 8.75rem)
+   --spacing-2xl: clamp(5rem, 8.5vw, 10.25rem)
+   --spacing-3xl: clamp(6rem, 12.3vw, 14.75rem)
+   --spacing-block: clamp(3.125rem, calc(2.232rem + 4.464vw), 6.25rem)
+   --color-text-black: #000000
+   --color-text-brown: #3F3F3F
+   --color-text-white: #FFFFFF
+   --color-text-red: #C0392B
+   --color-bg: #F4F4F4
+.template-content
+   a
+      text-decoration: none
+      box-sizing: border-box
+      transition: 0.5s !important
+      &:hover
+         color: var(--color-text-red)
+   ul
+      margin: 0
+      padding: 0
+      list-style-type: none
+   a
+      transition: color 0.5s ease
+      box-sizing: border-box
+   button
+      cursor: pointer
+      box-sizing: border-box
+   textarea
+      transition: border 0.5s
+      box-sizing: border-box
+      &:focus
+         transition: border 0.5s
+         outline: none
+   input
+      transition: 0.5s
+      box-sizing: border-box
+      &:disabled
+         pointer-events: none
+         opacity: 0.5
+      &:focus
+         transition: 0.5s
+      &:focus-visible
+         outline: initial
+   input::-webkit-input-placeholder
+      color: #4a4a4a !important
+   input::-moz-placeholder
+      color: #4a4a4a !important
+   input:-ms-input-placeholder
+      color: #4a4a4a !important
+   input:-moz-placeholder
+      color: #4a4a4a !important
+   div
+      box-sizing: border-box
+.container
+   padding: 0 15px
+   width: 100%
+   max-width: 1600px
+   margin: 0 auto
+.d-flex, .q
+   display: flex
+.hide
+   display: none !important
+.title2
+   margin: 0
+   font-size: clamp(32px, calc(4.5714px + 4.7619vw), 96px)
+   font-weight: 400
+   color: var(--color-text-black)
+   line-height: 92px
+   width: 100%
+   max-width: 800px
+   text-transform: uppercase
+.prog__content, .timing__tabs, .map__tabs, .menu ul
+   scrollbar-width: thin
+   scrollbar-color: transparent transparent
