@@ -1036,7 +1036,7 @@
   color: var(--color-text-black);
   line-height: 12px;
 }
-.guest__item_1 .guest__input {
+.guest__item--text .guest__input {
   font-family: "Playfair 9pt";
   width: 100%;
   border-radius: 0;
@@ -1045,10 +1045,10 @@
   background: var(--color-text-white);
   border: 1px solid var(--color-text-black);
 }
-.guest__item_1 .guest__input:focus {
+.guest__item--text .guest__input:focus {
   border: 1px solid lightgrey;
 }
-.guest__item_2 .guest__radios {
+.guest__item--presence .guest__radios {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1056,7 +1056,7 @@
   gap: 12px;
   padding-left: 0;
 }
-.guest__item_2 .guest__radio {
+.guest__item--presence .guest__radio {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -1067,7 +1067,7 @@
   padding: 0;
   cursor: pointer;
 }
-.guest__item_2 .guest__radio input {
+.guest__item--presence .guest__radio input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1076,10 +1076,10 @@
   padding: 0;
   overflow: hidden;
 }
-.guest__item_2 .guest__radio .guest__radio-box {
+.guest__item--presence .guest__radio .guest__radio-box {
   display: none;
 }
-.guest__item_2 .guest__radio .guest__radio-text {
+.guest__item--presence .guest__radio .guest__radio-text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1096,40 +1096,57 @@
   font-weight: 500;
   line-height: 29px;
 }
-.guest__item_2 .guest__radio:hover .guest__radio-text {
+.guest__item--presence .guest__radio:hover .guest__radio-text {
   background: var(--color-text-black);
   color: var(--color-text-white);
 }
-.guest__item_2 .guest__radio input:checked + .guest__radio-text {
+.guest__item--presence .guest__radio input:checked + .guest__radio-text {
   background: var(--color-text-black);
   border-color: var(--color-text-black);
   color: var(--color-text-white);
 }
-.guest__item_2 .guest__radio input:focus-visible + .guest__radio-text {
+.guest__item--presence .guest__radio input:focus-visible + .guest__radio-text {
   outline-offset: 3px;
 }
-.guest__item_3 {
+.guest__item--radio {
   position: relative;
 }
-.guest__item_3 h3 {
+.guest__item--radio h3 {
   margin-bottom: 18px;
 }
-.guest__item_4 h3 span {
+.guest__item--checkbox h3 span {
   display: block;
   margin-left: 0;
   margin-bottom: 20px;
   margin-top: 2px;
 }
-.guest__item_5 h3 span {
+.guest__item--checkbox h3 span {
   display: block;
   margin-left: 0;
   margin-bottom: 20px;
   margin-top: 2px;
 }
-.guest__item_6 {
+.guest__item--textarea {
   position: relative;
 }
-.guest__item_6 .guest__field textarea {
+.guest__item--textarea .guest__field textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-height: 108px;
+  padding: 18px 15px;
+  border: 1px solid var(--color-text-black);
+  border-radius: 0;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.guest__item--textarea .guest__field textarea:focus {
+  border-color: lightgrey;
+}
+.guest__item--allergy {
+  position: relative;
+}
+.guest__item--allergy .guest__field textarea {
   width: 100%;
   padding: 18px 0 0 17px;
   min-height: 434px;
@@ -1138,20 +1155,20 @@
   height: auto;
   box-sizing: border-box;
 }
-.guest__item_6 .guest__field textarea:focus {
+.guest__item--allergy .guest__field textarea:focus {
   border: 1px solid lightgrey;
 }
-.guest__item_7 {
+.guest__item--wishes {
   margin: 0 auto;
 }
-.guest__item_7 h3 {
+.guest__item--wishes h3 {
   margin-bottom: 16px;
   font-size: clamp(17.6px, 15.714px + 0.327vw, 22px);
   font-family: "Forum";
   letter-spacing: 0.2px;
   color: #2c2420;
 }
-.guest__item_7 .guest__field textarea {
+.guest__item--wishes .guest__field textarea {
   width: 100%;
   padding: 18px 0 0 15px;
   min-height: 108px;
@@ -1160,7 +1177,7 @@
   height: auto;
   box-sizing: border-box;
 }
-.guest__item_7 .guest__field textarea:focus {
+.guest__item--wishes .guest__field textarea:focus {
   border: 1.5px solid lightgrey;
 }
 .guest__checks {
@@ -1557,6 +1574,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 .dress__photos a {
   display: flex;
@@ -1746,7 +1764,10 @@
   font-weight: 500;
   color: var(--color-text-black);
   line-height: 100%;
-  width: max-content;
+  width: fit-content;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  white-space: normal;
   border-bottom: 1px solid var(--color-text-black);
   margin-top: 11px;
   display: block;
@@ -2286,7 +2307,7 @@
   .dress__content h2 {
     line-height: 100%;
   }
-  .guest__item_6 .guest__field textarea {
+  .guest__item--allergy .guest__field textarea {
     min-height: 350px;
   }
   .footer__letters {
@@ -2644,10 +2665,10 @@
     display: block;
     margin: -3px 0 10px;
   }
-  .guest__item_2 .guest__radio .guest__radio-text {
+  .guest__item--presence .guest__radio .guest__radio-text {
     line-height: 100%;
   }
-  .guest__item_2 .guest__radio {
+  .guest__item--presence .guest__radio {
     width: 47.7%;
     min-width: inherit;
   }
@@ -2655,11 +2676,11 @@
     gap: 11px;
     padding-left: 6px;
   }
-  .guest__item_7 h3 {
+  .guest__item--wishes h3 {
     margin-bottom: 7px;
     font-family: "Playfair 9pt", sans-serif;
   }
-  .guest__item_6 .guest__field textarea {
+  .guest__item--allergy .guest__field textarea {
     min-height: 108px;
   }
   .guest__form_btn {

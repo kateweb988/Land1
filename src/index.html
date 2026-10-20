@@ -215,22 +215,22 @@
 						</h2>
 						<div class="timer">
 							<div class="timer__item">
-								<span id="days">41</span>
+								<span id="days">00</span>
 								<p>день</p>
 							</div>
 
 							<div class="timer__item">
-								<span id="hours">10</span>
+								<span id="hours">00</span>
 								<p>часов</p>
 							</div>
 
 							<div class="timer__item">
-								<span id="minutes">55</span>
+								<span id="minutes">00</span>
 								<p>минут</p>
 							</div>
 
 							<div class="timer__item">
-								<span id="seconds">24</span>
+								<span id="seconds">00</span>
 								<p>секунды</p>
 							</div>
 						</div>
@@ -771,18 +771,18 @@
 
 								<!-- ГОСТЬ 1 -->
 								<div class="guest__content active" data-guest="0">
-									<div class="guest__item guest__item_1">
+									<div class="guest__item guest__item--text">
 										<h3>Ваше ФИО <span>Обязательное</span></h3>
 										<input type="text" id="guest-1-name" name="guest-1-name" data-field="name" placeholder="Иванова Анна Сергеевна" class="guest__input">
 									</div>
-									<div class="guest__item guest__item_2">
+									<div class="guest__item guest__item--presence">
 										<h3>Подтверждение присутствия <span>Обязательное</span></h3>
 										<div class="guest__radios">
 											<label class="guest__radio" for="guest-1-presence-yes"><input type="radio" id="guest-1-presence-yes" name="guest-1-presence" value="yes" data-field="presence"><span class="guest__radio-text">Да, приду</span></label>
 											<label class="guest__radio" for="guest-1-presence-no"><input type="radio" id="guest-1-presence-no" name="guest-1-presence" value="no" data-field="presence"><span class="guest__radio-text">Нет, не смогу</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_3">
+									<div class="guest__item guest__item--radio">
 										<h3>Со спутником? <span>Обязательное</span></h3>
 										<div class="guest__radios">
 											<label class="guest__radio" for="guest-1-companion-0"><input type="radio" id="guest-1-companion-0" name="guest-1-companion" value="0" data-field="companion" checked><span class="guest__radio-box"></span><span class="guest__radio-text">Приду один(а)</span></label>
@@ -790,7 +790,7 @@
 											<label class="guest__radio" for="guest-1-companion-2"><input type="radio" id="guest-1-companion-2" name="guest-1-companion" value="2" data-field="companion"><span class="guest__radio-box"></span><span class="guest__radio-text">+2 спутника</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_4">
+									<div class="guest__item guest__item--checkbox">
 										<h3>Что будете есть? <span>Можно выбрать несколько вариантов</span></h3>
 										<div class="guest__checks">
 											<label class="guest__check" for="guest-1-dish-meat"><input type="checkbox" id="guest-1-dish-meat" name="guest-1-dish[]" value="meat" data-field="dish" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Мясо</span></label>
@@ -803,7 +803,7 @@
 											<label class="guest__check" for="guest-1-dish-diet"><input type="checkbox" id="guest-1-dish-diet" name="guest-1-dish[]" value="diet" data-field="dish" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Диетическое</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_5">
+									<div class="guest__item guest__item--checkbox">
 										<h3>Что будете пить? <span>Можно выбрать несколько вариантов</span></h3>
 										<div class="guest__checks">
 											<label class="guest__check" for="guest-1-drink-champagne"><input type="checkbox" id="guest-1-drink-champagne" name="guest-1-drink[]" value="champagne" data-field="drink" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Шампанское</span></label>
@@ -814,11 +814,11 @@
 											<label class="guest__check" for="guest-1-drink-none"><input type="checkbox" id="guest-1-drink-none" name="guest-1-drink[]" value="none" data-field="drink" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Безалкогольное</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_6">
+									<div class="guest__item guest__item--textarea guest__item--allergy">
 										<h3>Аллергии</h3>
 										<div class="guest__field"><textarea id="guest-1-allergy" name="guest-1-allergy" data-field="allergy" placeholder="Укажите ваши аллергии, если есть..."></textarea></div>
 									</div>
-									<div class="guest__item guest__item_7">
+									<div class="guest__item guest__item--textarea guest__item--wishes">
 										<h3>Дополнительные пожелания</h3>
 										<div class="guest__field"><textarea id="guest-1-wishes" name="guest-1-wishes" data-field="wishes" placeholder="Ваши пожелания к организаторам..."></textarea></div>
 									</div>
@@ -826,18 +826,18 @@
 
 								<!-- ГОСТЬ 2 -->
 								<div class="guest__content" data-guest="1">
-									<div class="guest__item guest__item_1">
+									<div class="guest__item guest__item--text">
 										<h3>Ваше ФИО <span>Обязательное</span></h3>
 										<input type="text" id="guest-2-name" name="guest-2-name" data-field="name" placeholder="Иванова Анна Сергеевна" class="guest__input">
 									</div>
-									<div class="guest__item guest__item_2">
+									<div class="guest__item guest__item--presence">
 										<h3>Подтверждение присутствия <span>Обязательное</span></h3>
 										<div class="guest__radios">
 											<label class="guest__radio" for="guest-2-presence-yes"><input type="radio" id="guest-2-presence-yes" name="guest-2-presence" value="yes" data-field="presence"><span class="guest__radio-text">Да, приду</span></label>
 											<label class="guest__radio" for="guest-2-presence-no"><input type="radio" id="guest-2-presence-no" name="guest-2-presence" value="no" data-field="presence"><span class="guest__radio-text">Нет, не смогу</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_3">
+									<div class="guest__item guest__item--radio">
 										<h3>Со спутником? <span>Обязательное</span></h3>
 										<div class="guest__radios">
 											<label class="guest__radio" for="guest-2-companion-0"><input type="radio" id="guest-2-companion-0" name="guest-2-companion" value="0" data-field="companion" checked><span class="guest__radio-box"></span><span class="guest__radio-text">Приду один(а)</span></label>
@@ -845,7 +845,7 @@
 											<label class="guest__radio" for="guest-2-companion-2"><input type="radio" id="guest-2-companion-2" name="guest-2-companion" value="2" data-field="companion"><span class="guest__radio-box"></span><span class="guest__radio-text">+2 спутника</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_4">
+									<div class="guest__item guest__item--checkbox">
 										<h3>Что будете есть? <span>Можно выбрать несколько вариантов</span></h3>
 										<div class="guest__checks">
 											<label class="guest__check" for="guest-2-dish-meat"><input type="checkbox" id="guest-2-dish-meat" name="guest-2-dish[]" value="meat" data-field="dish" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Мясо</span></label>
@@ -858,7 +858,7 @@
 											<label class="guest__check" for="guest-2-dish-diet"><input type="checkbox" id="guest-2-dish-diet" name="guest-2-dish[]" value="diet" data-field="dish" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Диетическое</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_5">
+									<div class="guest__item guest__item--checkbox">
 										<h3>Что будете пить? <span>Можно выбрать несколько вариантов</span></h3>
 										<div class="guest__checks">
 											<label class="guest__check" for="guest-2-drink-champagne"><input type="checkbox" id="guest-2-drink-champagne" name="guest-2-drink[]" value="champagne" data-field="drink" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Шампанское</span></label>
@@ -869,11 +869,11 @@
 											<label class="guest__check" for="guest-2-drink-none"><input type="checkbox" id="guest-2-drink-none" name="guest-2-drink[]" value="none" data-field="drink" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Безалкогольное</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_6">
+									<div class="guest__item guest__item--textarea guest__item--allergy">
 										<h3>Аллергии</h3>
 										<div class="guest__field"><textarea id="guest-2-allergy" name="guest-2-allergy" data-field="allergy" placeholder="Укажите ваши аллергии, если есть..."></textarea></div>
 									</div>
-									<div class="guest__item guest__item_7">
+									<div class="guest__item guest__item--textarea guest__item--wishes">
 										<h3>Дополнительные пожелания</h3>
 										<div class="guest__field"><textarea id="guest-2-wishes" name="guest-2-wishes" data-field="wishes" placeholder="Ваши пожелания к организаторам..."></textarea></div>
 									</div>
@@ -881,18 +881,18 @@
 
 								<!-- ГОСТЬ 3 -->
 								<div class="guest__content" data-guest="2">
-									<div class="guest__item guest__item_1">
+									<div class="guest__item guest__item--text">
 										<h3>Ваше ФИО <span>Обязательное</span></h3>
 										<input type="text" id="guest-3-name" name="guest-3-name" data-field="name" placeholder="Иванова Анна Сергеевна" class="guest__input">
 									</div>
-									<div class="guest__item guest__item_2">
+									<div class="guest__item guest__item--presence">
 										<h3>Подтверждение присутствия <span>Обязательное</span></h3>
 										<div class="guest__radios">
 											<label class="guest__radio" for="guest-3-presence-yes"><input type="radio" id="guest-3-presence-yes" name="guest-3-presence" value="yes" data-field="presence"><span class="guest__radio-text">Да, приду</span></label>
 											<label class="guest__radio" for="guest-3-presence-no"><input type="radio" id="guest-3-presence-no" name="guest-3-presence" value="no" data-field="presence"><span class="guest__radio-text">Нет, не смогу</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_3">
+									<div class="guest__item guest__item--radio">
 										<h3>Со спутником? <span>Обязательное</span></h3>
 										<div class="guest__radios">
 											<label class="guest__radio" for="guest-3-companion-0"><input type="radio" id="guest-3-companion-0" name="guest-3-companion" value="0" data-field="companion" checked><span class="guest__radio-box"></span><span class="guest__radio-text">Приду один(а)</span></label>
@@ -900,7 +900,7 @@
 											<label class="guest__radio" for="guest-3-companion-2"><input type="radio" id="guest-3-companion-2" name="guest-3-companion" value="2" data-field="companion"><span class="guest__radio-box"></span><span class="guest__radio-text">+2 спутника</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_4">
+									<div class="guest__item guest__item--checkbox">
 										<h3>Что будете есть? <span>Можно выбрать несколько вариантов</span></h3>
 										<div class="guest__checks">
 											<label class="guest__check" for="guest-3-dish-meat"><input type="checkbox" id="guest-3-dish-meat" name="guest-3-dish[]" value="meat" data-field="dish" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Мясо</span></label>
@@ -913,7 +913,7 @@
 											<label class="guest__check" for="guest-3-dish-diet"><input type="checkbox" id="guest-3-dish-diet" name="guest-3-dish[]" value="diet" data-field="dish" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Диетическое</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_5">
+									<div class="guest__item guest__item--checkbox">
 										<h3>Что будете пить? <span>Можно выбрать несколько вариантов</span></h3>
 										<div class="guest__checks">
 											<label class="guest__check" for="guest-3-drink-champagne"><input type="checkbox" id="guest-3-drink-champagne" name="guest-3-drink[]" value="champagne" data-field="drink" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Шампанское</span></label>
@@ -924,11 +924,11 @@
 											<label class="guest__check" for="guest-3-drink-none"><input type="checkbox" id="guest-3-drink-none" name="guest-3-drink[]" value="none" data-field="drink" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Безалкогольное</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_6">
+									<div class="guest__item guest__item--textarea guest__item--allergy">
 										<h3>Аллергии</h3>
 										<div class="guest__field"><textarea id="guest-3-allergy" name="guest-3-allergy" data-field="allergy" placeholder="Укажите ваши аллергии, если есть..."></textarea></div>
 									</div>
-									<div class="guest__item guest__item_7">
+									<div class="guest__item guest__item--textarea guest__item--wishes">
 										<h3>Дополнительные пожелания</h3>
 										<div class="guest__field"><textarea id="guest-3-wishes" name="guest-3-wishes" data-field="wishes" placeholder="Ваши пожелания к организаторам..."></textarea></div>
 									</div>
@@ -936,18 +936,18 @@
 
 								<!-- ГОСТЬ 4 -->
 								<div class="guest__content" data-guest="3">
-									<div class="guest__item guest__item_1">
+									<div class="guest__item guest__item--text">
 										<h3>Ваше ФИО <span>Обязательное</span></h3>
 										<input type="text" id="guest-4-name" name="guest-4-name" data-field="name" placeholder="Иванова Анна Сергеевна" class="guest__input">
 									</div>
-									<div class="guest__item guest__item_2">
+									<div class="guest__item guest__item--presence">
 										<h3>Подтверждение присутствия <span>Обязательное</span></h3>
 										<div class="guest__radios">
 											<label class="guest__radio" for="guest-4-presence-yes"><input type="radio" id="guest-4-presence-yes" name="guest-4-presence" value="yes" data-field="presence"><span class="guest__radio-text">Да, приду</span></label>
 											<label class="guest__radio" for="guest-4-presence-no"><input type="radio" id="guest-4-presence-no" name="guest-4-presence" value="no" data-field="presence"><span class="guest__radio-text">Нет, не смогу</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_3">
+									<div class="guest__item guest__item--radio">
 										<h3>Со спутником? <span>Обязательное</span></h3>
 										<div class="guest__radios">
 											<label class="guest__radio" for="guest-4-companion-0"><input type="radio" id="guest-4-companion-0" name="guest-4-companion" value="0" data-field="companion" checked><span class="guest__radio-box"></span><span class="guest__radio-text">Приду один(а)</span></label>
@@ -955,7 +955,7 @@
 											<label class="guest__radio" for="guest-4-companion-2"><input type="radio" id="guest-4-companion-2" name="guest-4-companion" value="2" data-field="companion"><span class="guest__radio-box"></span><span class="guest__radio-text">+2 спутника</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_4">
+									<div class="guest__item guest__item--checkbox">
 										<h3>Что будете есть? <span>Можно выбрать несколько вариантов</span></h3>
 										<div class="guest__checks">
 											<label class="guest__check" for="guest-4-dish-meat"><input type="checkbox" id="guest-4-dish-meat" name="guest-4-dish[]" value="meat" data-field="dish" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Мясо</span></label>
@@ -968,7 +968,7 @@
 											<label class="guest__check" for="guest-4-dish-diet"><input type="checkbox" id="guest-4-dish-diet" name="guest-4-dish[]" value="diet" data-field="dish" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Диетическое</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_5">
+									<div class="guest__item guest__item--checkbox">
 										<h3>Что будете пить? <span>Можно выбрать несколько вариантов</span></h3>
 										<div class="guest__checks">
 											<label class="guest__check" for="guest-4-drink-champagne"><input type="checkbox" id="guest-4-drink-champagne" name="guest-4-drink[]" value="champagne" data-field="drink" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Шампанское</span></label>
@@ -979,11 +979,11 @@
 											<label class="guest__check" for="guest-4-drink-none"><input type="checkbox" id="guest-4-drink-none" name="guest-4-drink[]" value="none" data-field="drink" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Безалкогольное</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_6">
+									<div class="guest__item guest__item--textarea guest__item--allergy">
 										<h3>Аллергии</h3>
 										<div class="guest__field"><textarea id="guest-4-allergy" name="guest-4-allergy" data-field="allergy" placeholder="Укажите ваши аллергии, если есть..."></textarea></div>
 									</div>
-									<div class="guest__item guest__item_7">
+									<div class="guest__item guest__item--textarea guest__item--wishes">
 										<h3>Дополнительные пожелания</h3>
 										<div class="guest__field"><textarea id="guest-4-wishes" name="guest-4-wishes" data-field="wishes" placeholder="Ваши пожелания к организаторам..."></textarea></div>
 									</div>
@@ -991,18 +991,18 @@
 
 								<!-- ГОСТЬ 5 -->
 								<div class="guest__content" data-guest="4">
-									<div class="guest__item guest__item_1">
+									<div class="guest__item guest__item--text">
 										<h3>Ваше ФИО <span>Обязательное</span></h3>
 										<input type="text" id="guest-5-name" name="guest-5-name" data-field="name" placeholder="Иванова Анна Сергеевна" class="guest__input">
 									</div>
-									<div class="guest__item guest__item_2">
+									<div class="guest__item guest__item--presence">
 										<h3>Подтверждение присутствия <span>Обязательное</span></h3>
 										<div class="guest__radios">
 											<label class="guest__radio" for="guest-5-presence-yes"><input type="radio" id="guest-5-presence-yes" name="guest-5-presence" value="yes" data-field="presence"><span class="guest__radio-text">Да, приду</span></label>
 											<label class="guest__radio" for="guest-5-presence-no"><input type="radio" id="guest-5-presence-no" name="guest-5-presence" value="no" data-field="presence"><span class="guest__radio-text">Нет, не смогу</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_3">
+									<div class="guest__item guest__item--radio">
 										<h3>Со спутником? <span>Обязательное</span></h3>
 										<div class="guest__radios">
 											<label class="guest__radio" for="guest-5-companion-0"><input type="radio" id="guest-5-companion-0" name="guest-5-companion" value="0" data-field="companion" checked><span class="guest__radio-box"></span><span class="guest__radio-text">Приду один(а)</span></label>
@@ -1010,7 +1010,7 @@
 											<label class="guest__radio" for="guest-5-companion-2"><input type="radio" id="guest-5-companion-2" name="guest-5-companion" value="2" data-field="companion"><span class="guest__radio-box"></span><span class="guest__radio-text">+2 спутника</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_4">
+									<div class="guest__item guest__item--checkbox">
 										<h3>Что будете есть? <span>Можно выбрать несколько вариантов</span></h3>
 										<div class="guest__checks">
 											<label class="guest__check" for="guest-5-dish-meat"><input type="checkbox" id="guest-5-dish-meat" name="guest-5-dish[]" value="meat" data-field="dish" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Мясо</span></label>
@@ -1023,7 +1023,7 @@
 											<label class="guest__check" for="guest-5-dish-diet"><input type="checkbox" id="guest-5-dish-diet" name="guest-5-dish[]" value="diet" data-field="dish" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Диетическое</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_5">
+									<div class="guest__item guest__item--checkbox">
 										<h3>Что будете пить? <span>Можно выбрать несколько вариантов</span></h3>
 										<div class="guest__checks">
 											<label class="guest__check" for="guest-5-drink-champagne"><input type="checkbox" id="guest-5-drink-champagne" name="guest-5-drink[]" value="champagne" data-field="drink" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Шампанское</span></label>
@@ -1034,11 +1034,11 @@
 											<label class="guest__check" for="guest-5-drink-none"><input type="checkbox" id="guest-5-drink-none" name="guest-5-drink[]" value="none" data-field="drink" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Безалкогольное</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_6">
+									<div class="guest__item guest__item--textarea guest__item--allergy">
 										<h3>Аллергии</h3>
 										<div class="guest__field"><textarea id="guest-5-allergy" name="guest-5-allergy" data-field="allergy" placeholder="Укажите ваши аллергии, если есть..."></textarea></div>
 									</div>
-									<div class="guest__item guest__item_7">
+									<div class="guest__item guest__item--textarea guest__item--wishes">
 										<h3>Дополнительные пожелания</h3>
 										<div class="guest__field"><textarea id="guest-5-wishes" name="guest-5-wishes" data-field="wishes" placeholder="Ваши пожелания к организаторам..."></textarea></div>
 									</div>
@@ -1046,18 +1046,18 @@
 
 								<!-- ГОСТЬ 6 -->
 								<div class="guest__content" data-guest="5">
-									<div class="guest__item guest__item_1">
+									<div class="guest__item guest__item--text">
 										<h3>Ваше ФИО <span>Обязательное</span></h3>
 										<input type="text" id="guest-6-name" name="guest-6-name" data-field="name" placeholder="Иванова Анна Сергеевна" class="guest__input">
 									</div>
-									<div class="guest__item guest__item_2">
+									<div class="guest__item guest__item--presence">
 										<h3>Подтверждение присутствия <span>Обязательное</span></h3>
 										<div class="guest__radios">
 											<label class="guest__radio" for="guest-6-presence-yes"><input type="radio" id="guest-6-presence-yes" name="guest-6-presence" value="yes" data-field="presence"><span class="guest__radio-text">Да, приду</span></label>
 											<label class="guest__radio" for="guest-6-presence-no"><input type="radio" id="guest-6-presence-no" name="guest-6-presence" value="no" data-field="presence"><span class="guest__radio-text">Нет, не смогу</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_3">
+									<div class="guest__item guest__item--radio">
 										<h3>Со спутником? <span>Обязательное</span></h3>
 										<div class="guest__radios">
 											<label class="guest__radio" for="guest-6-companion-0"><input type="radio" id="guest-6-companion-0" name="guest-6-companion" value="0" data-field="companion" checked><span class="guest__radio-box"></span><span class="guest__radio-text">Приду один(а)</span></label>
@@ -1065,7 +1065,7 @@
 											<label class="guest__radio" for="guest-6-companion-2"><input type="radio" id="guest-6-companion-2" name="guest-6-companion" value="2" data-field="companion"><span class="guest__radio-box"></span><span class="guest__radio-text">+2 спутника</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_4">
+									<div class="guest__item guest__item--checkbox">
 										<h3>Что будете есть? <span>Можно выбрать несколько вариантов</span></h3>
 										<div class="guest__checks">
 											<label class="guest__check" for="guest-6-dish-meat"><input type="checkbox" id="guest-6-dish-meat" name="guest-6-dish[]" value="meat" data-field="dish" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Мясо</span></label>
@@ -1078,7 +1078,7 @@
 											<label class="guest__check" for="guest-6-dish-diet"><input type="checkbox" id="guest-6-dish-diet" name="guest-6-dish[]" value="diet" data-field="dish" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Диетическое</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_5">
+									<div class="guest__item guest__item--checkbox">
 										<h3>Что будете пить? <span>Можно выбрать несколько вариантов</span></h3>
 										<div class="guest__checks">
 											<label class="guest__check" for="guest-6-drink-champagne"><input type="checkbox" id="guest-6-drink-champagne" name="guest-6-drink[]" value="champagne" data-field="drink" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Шампанское</span></label>
@@ -1089,11 +1089,11 @@
 											<label class="guest__check" for="guest-6-drink-none"><input type="checkbox" id="guest-6-drink-none" name="guest-6-drink[]" value="none" data-field="drink" data-multiple="true"><span class="guest__check-box"></span><span class="guest__check-text">Безалкогольное</span></label>
 										</div>
 									</div>
-									<div class="guest__item guest__item_6">
+									<div class="guest__item guest__item--textarea guest__item--allergy">
 										<h3>Аллергии</h3>
 										<div class="guest__field"><textarea id="guest-6-allergy" name="guest-6-allergy" data-field="allergy" placeholder="Укажите ваши аллергии, если есть..."></textarea></div>
 									</div>
-									<div class="guest__item guest__item_7">
+									<div class="guest__item guest__item--textarea guest__item--wishes">
 										<h3>Дополнительные пожелания</h3>
 										<div class="guest__field"><textarea id="guest-6-wishes" name="guest-6-wishes" data-field="wishes" placeholder="Ваши пожелания к организаторам..."></textarea></div>
 									</div>
